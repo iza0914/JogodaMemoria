@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória - Tinker Bell</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <header class="header">
+            <span class="sparkle">✧</span>
+            <h1>Jogo da Memória</h1>
+            <h2>O Mundo das Fadas</h2>
+            <p>Encontre os pares mágicos!</p>
+            <span class="sparkle">✧</span>
+        </header>
+
+        <section class="game-info">
+            <div class="info-box">
+                <span>Tempo</span>
+                <strong id="timer">00:00</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Jogadas</span>
+                <strong id="moves">0</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Pares</span>
+                <strong id="pairs">0 / 13</strong>
+            </div>
+        </section>
+
+        <section id="game-board" class="game-board"></section>
+
+        <button id="restart-button" class="restart-button">
+            Recomeçar jogo
+        </button>
+
+        <div id="victory-message" class="victory-message hidden">
+            <h2>✨ Parabéns! ✨</h2>
+            <p>Você encontrou todos os pares mágicos!</p>
+            <button id="play-again-button">Jogar novamente</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
